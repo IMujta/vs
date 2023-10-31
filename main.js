@@ -95,7 +95,7 @@ vs.onclick = function () {
     ramiImg.style.borderRadius = "50%"
 
     rayanImg.style.top = "20px"
-    rayanImg.style.left = "270px"
+    rayanImg.style.left = "67%"
     rayanImg.style.transform = "translate(0%, 0%)"
     rayanImg.src = "/images/rayanP.JPG";
     rayanImg.style.borderRadius = "50%"
