@@ -322,7 +322,7 @@ nav .icon img {
   -o-transform: translate(-50%, -50%);
   font-size: 100px;
   font-weight: bold;
-  background-image: url(/images/fire.gif);
+  background-image: url(images/fire.gif);
   background-clip: text;
   -webkit-background-clip: text;
   background-position: top right;
@@ -445,6 +445,7 @@ nav .icon img {
   .rayan-box .ifram-container .ifram-content {
     top: -751px;
   }
+
 }
 
 /* End lading */
