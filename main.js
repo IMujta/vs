@@ -77,7 +77,7 @@ vs.onclick = function () {
     theam.play();
     theam.volume = 0.01;
     // -------------------------
-    navBar.innerHTML = "<img src='/images/m7.gif'>"
+    navBar.innerHTML = "<img src='images/m7.gif'>"
     navBar.classList.add("vs")
     storDiv.style.display = "none";
     clicked = true;
