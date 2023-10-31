@@ -1,7 +1,3 @@
-window.onload = function () {
-  document.querySelector("video").play();
-}
-
 let tShart = document.querySelector("#articles");
 let tShartTitle = document.querySelector("#articles .mine-title");
 let befor = document.querySelector("#articles .mine-title .bot-dot");
