@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Why We Use <br> Element",
+    "ansswer_1": "To Make Text Bold",
+    "ansswer_2": "To Make Text Italic",
+    "ansswer_3": "To Add Breakline",
+    "ansswer_4": "To Make Horisontal Line",
+    "right_answer": "To Add Breakline"
+  },
+  {
+    "title": "Is <img> Element Has Attribute href",
+    "ansswer_1": "Yes",
+    "ansswer_2": "No Its For Anchor Tag <a>",
+    "ansswer_3": "All Elements has This Attribute",
+    "ansswer_4": "Answer 1 And 3 Is Right",
+    "right_answer": "No Its For Anchor Tag <a>"
+  },
+  {
+    "title": "How Can We Made Element Text Bold",
+    "ansswer_1": "Putting It Inside <b> Tag",
+    "ansswer_2": "Putting It Inside <strong> Tag",
+    "ansswer_3": "Customizing It With Font-Weight property In Css",
+    "ansswer_4": "All Answers Is Right",
+    "right_answer": "All Answers Is Right"
+  },
+  {
+    "title": "What Is The Right Hierarchy For Creating part Of Page",
+    "ansswer_1": "<h2> Then <p> Then <h1> then <p> Then <h3> Then <p> Then <img>",
+    "ansswer_2": "<h1> Then <p> Then <h3> then <p> Then <h2> Then <p> Then <img>",
+    "ansswer_3": "<h2> Then <p> Then <h3> then <p> Then <h1> Then <p> Then <img>",
+    "ansswer_4": "All Answers Is Wrong",
+    "right_answer": "All Answers Is Wrong"
+  },
+  {
+    "title": "How Can We Include Eternal Page Inside Our HTML Page",
+    "ansswer_1": "By Using Include In HTML",
+    "ansswer_2": "By Using Load In HTML",
+    "ansswer_3": "By Using iFrame tag",
+    "ansswer_4": "All Solutions Is Wrong",
+    "right_answer": "By Using iFrame tag"
+  },
+  {
+    "title": "What Is The Tag That Not Exists in HTML",
+    "ansswer_1": "<object>",
+    "ansswer_2": "<basefont>",
+    "ansswer_3": "<abbr>",
+    "ansswer_4": "All Tags Is Exists in HTML",
+    "right_answer": "All Tags Is Exists in HTML"
+  },
+  {
+    "title": "How We Specify Document Type Of HTML5",
+    "ansswer_1": "<DOCTYPE html>",
+    "ansswer_2": "<DOCTYPE html5>",
+    "ansswer_3": "<!DOCTYPE html5>",
+    "ansswer_4": "<!DOCTYPE html>",
+    "right_answer": "<!DOCTYPE html>"
+  },
+  {
+    "title": "What Is The Element Thats Not Exists in HTML5 Semantics",
+    "ansswer_1": "<article>",
+    "ansswer_2": "<section>",
+    "ansswer_3": "<blockquote>",
+    "ansswer_4": "<aside>",
+    "right_answer": "<blockquote>"
+  },
+  {
+    "title": "In HTML Can We Use This Way To Add Attributes",
+    "ansswer_1": "<div Class='class-name'>",
+    "ansswer_2": "<div Class=class-name>",
+    "ansswer_3": "<div Class=\"class-name\">",
+    "ansswer_4": "All Is Right",
+    "right_answer": "<blockquote>"
+  }
+]
