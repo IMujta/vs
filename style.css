@@ -301,13 +301,14 @@ nav .icon img {
   -o-transition: 1s;
 }
 
-/* .landing .data .rami-box img {
-  right: 28%;
+.landing .data .rami-box img.sercl,
+.landing .data .rayan-box img.sercl {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
-
-.landing .data .rayan-box img {
-  left: 25%;
-} */
 
 .landing .data .vs {
   color: transparent;

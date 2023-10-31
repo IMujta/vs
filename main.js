@@ -96,13 +96,13 @@ vs.onclick = function () {
     ramiImg.style.left = "20px"
     ramiImg.style.transform = "translate(0%, 0%)"
     ramiImg.src = "/images/ramiP.JPG";
-    ramiImg.style.borderRadius = "50%"
+    ramiImg.classList.add("sercl")
 
     rayanImg.style.top = "20px"
     rayanImg.style.left = "67%"
     rayanImg.style.transform = "translate(0%, 0%)"
     rayanImg.src = "/images/rayanP.JPG";
-    rayanImg.style.borderRadius = "50%"
+    rayanImg.classList.add("sercl")
     // -------------------------
     boxs.forEach((box) => {
       box.style.width = "100%";
