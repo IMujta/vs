@@ -303,13 +303,29 @@ nav .icon img {
   -o-transition: 1s;
 }
 
-.landing .data .rami-box img.sercl,
-.landing .data .rayan-box img.sercl {
+.landing .data .rami-box img.active,
+.landing .data .rayan-box img.active {
+  top: 20px;
+  transform: translate(0%, 0%);
+  -webkit-transform: translate(0%, 0%);
+  -moz-transform: translate(0%, 0%);
+  -ms-transform: translate(0%, 0%);
+  -o-transform: translate(0%, 0%);
   border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+}
+
+.landing .data .rami-box img.active {
+  top: 20px;
+  left: 20px;
+}
+
+.landing .data .rayan-box img.active {
+  top: 60px;
+  left: 67%;
 }
 
 .landing .data .vs {
@@ -350,6 +366,10 @@ nav .icon img {
   -moz-transition: 1s;
   -ms-transition: 1s;
   -o-transition: 1s;
+}
+
+.ifram-container.active {
+  bottom: 50px;
 }
 
 .ifram-container .ifram-content {
@@ -436,8 +456,12 @@ nav .icon img {
     right: -100%;
   }
 
-  .ifram-container {
-    bottom: 0;
+  .rayan-box .ifram-container {
+    bottom: 20px;
+  }
+
+  .rami-box .ifram-container {
+    bottom: 60px;
   }
 
   .rami-box .ifram-container .ifram-content {

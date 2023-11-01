@@ -110,21 +110,15 @@ vs.onclick = function () {
     backGimage2.style.hieght = "100%";
     // -------------------------
     iframies.forEach((frami) => {
-      frami.style.bottom = "50px";
       frami.style.opacity = "1";
+      frami.classList.add("active")
     })
     // -------------------------
-    ramiImg.style.top = "20px"
-    ramiImg.style.left = "20px"
-    ramiImg.style.transform = "translate(0%, 0%)"
     ramiImg.src = "images/ramiP.JPG";
-    ramiImg.classList.add("sercl")
+    ramiImg.classList.add("active")
 
-    rayanImg.style.top = "50px"
-    rayanImg.style.left = "67%"
-    rayanImg.style.transform = "translate(0%, 0%)"
     rayanImg.src = "images/rayanP.JPG";
-    rayanImg.classList.add("sercl")
+    rayanImg.classList.add("active")
     // -------------------------
     boxs.forEach((box) => {
       box.style.width = "100%";
