@@ -45,6 +45,32 @@ window.onscroll = function () {
     postrsTitle.classList.remove("tilte-animation")
   }
 }
+// --------------------------------------------
+// Timer
+let timerContaner = document.querySelector(".landing .data .timer");
+let clockDays = document.querySelector(".days .time");
+let clockhours = document.querySelector(".hours .time");
+let clockmins = document.querySelector(".min .time");
+let clocksecs = document.querySelector(".sec .time");
+
+let endOfThisYear = new Date("Nov 12, 2023 23:59:59").getTime();
+
+let counter = setInterval(() => {
+  let currntDate = new Date().getTime();
+  let timeLeft = endOfThisYear - currntDate;
+
+  let days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+  let hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  let mins = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+  let secs = Math.floor((timeLeft % (1000 * 60)) / (1000));
+  clockDays.innerHTML = days;
+  clockhours.innerHTML = hours.toString().padStart(2, 0);
+  clockmins.innerHTML = mins.toString().padStart(2, 0);
+  clocksecs.innerHTML = secs.toString().padStart(2, 0);
+  if (days === 0 && hours === 0 && mins === 0 && secs === 0) {
+    clearInterval(counter);
+  }
+}, 1000);
 
 // --------------------------------------------
 let vs = document.querySelector(".landing .data .vs");
@@ -94,7 +120,7 @@ vs.onclick = function () {
     ramiImg.src = "images/ramiP.JPG";
     ramiImg.classList.add("sercl")
 
-    rayanImg.style.top = "20px"
+    rayanImg.style.top = "50px"
     rayanImg.style.left = "67%"
     rayanImg.style.transform = "translate(0%, 0%)"
     rayanImg.src = "images/rayanP.JPG";
@@ -104,21 +130,9 @@ vs.onclick = function () {
       box.style.width = "100%";
     })
     // -------------------------
-    // dataContaner.style.width = "100%"
-    // boxs.forEach((box) => {
-    //   box.style.alignSelf = "flex-start";
-    // })
-    // chimpionImags.forEach((img) => {
-    //   img.style.transform = "translateX(0%)";
-    // })
-    // vs.style.marginTop = "-190px"
-    // ramiFram.style.left = "200px";
-    // rayanFram.style.right = "192px";
-    // ramiFram.style.opacity = "1";
-    // rayanFram.style.opacity = "1";
+    timerContaner.classList.add("active");
+    vs.classList.add("active");
   }
 }
 
 // -----------------------------
-
-console.log()
