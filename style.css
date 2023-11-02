@@ -28,6 +28,7 @@
 body {
   font-family: 'Cairo', sans-serif;
   background-color: black;
+  pointer-events: none;
 }
 
 ::selection {
@@ -211,6 +212,7 @@ nav ul li a {
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
   text-decoration: none;
+  pointer-events: all;
 }
 
 nav ul li:hover a {
@@ -345,6 +347,7 @@ nav .icon img {
   -webkit-background-clip: text;
   background-position: top right;
   cursor: pointer;
+  pointer-events: all;
 }
 
 .ifram-container {
@@ -689,3 +692,5 @@ nav .icon img {
   font-weight: bold;
   text-shadow: black 0 0 5px;
 }
+
+/* ------------------------------------ */
