@@ -13,7 +13,7 @@
   --grey-222: #222;
   --grey-333: #333;
   --grey-444: #444;
-  --grey-555: #555;
+  --grey-555: #555555;
 }
 
 * {
@@ -380,7 +380,7 @@ nav .icon img {
 }
 
 .rami-box .ifram-container .ifram-content {
-  top: -695px;
+  top: -752px;
 }
 
 .rayan-box .ifram-container .ifram-content {
@@ -465,7 +465,7 @@ nav .icon img {
   }
 
   .rami-box .ifram-container .ifram-content {
-    top: -600px;
+    top: -655px;
   }
 
   .rayan-box .ifram-container .ifram-content {
