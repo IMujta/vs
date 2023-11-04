@@ -619,7 +619,7 @@ html {
   font-weight: bold;
 }
 
-.article .container .card .foot i {
+.article .container .card .foot span {
   color: var(--mine-color);
   transition: var(--mine-transition);
   -webkit-transition: var(--mine-transition);
@@ -628,7 +628,7 @@ html {
   -o-transition: var(--mine-transition);
 }
 
-.article .container .card:hover i {
+.article .container .card:hover span {
   animation: left 0.6s linear infinite;
 }
 
