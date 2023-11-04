@@ -85,7 +85,7 @@ let ramiImg = document.querySelector(".rami-box img");
 let rayanImg = document.querySelector(".rayan-box img");
 let navBar = document.querySelector(".nav-bar");
 let m7Img = document.querySelector(".nav-bar .m7-img");
-let muteBtn = document.querySelector(".nav-bar .mute i");
+let muteBtn = document.querySelector(".nav-bar .mute span");
 let areMuted = false;
 
 vs.onclick = function () {
@@ -148,11 +148,11 @@ m7Img.onclick = function () {
 
 muteBtn.onclick = function () {
   if (areMuted) {
-    theam.volume = 0.02;
+    theam.play();
     this.className = "fa-solid fa-volume-high";
     areMuted = false;
   } else {
-    theam.volume = 0;
+    theam.pause();
     this.className = "fa-solid fa-volume-xmark";
     areMuted = true;
   }

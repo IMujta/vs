@@ -256,7 +256,7 @@ html {
   -o-transform: translateY(-5px);
 }
 
-.nav-bar .mute i {
+.nav-bar .mute span {
   background-color: #444;
   padding: 10px;
   border-radius: 6px;
@@ -283,11 +283,11 @@ html {
   -o-transition: 0.3s;
 }
 
-.nav-bar .mute i:hover {
+.nav-bar .mute span:hover {
   opacity: 1;
 }
 
-.nav-bar.vs .mute i {
+.nav-bar.vs .mute span {
   display: block;
 }
 
@@ -570,6 +570,12 @@ html {
   overflow: hidden;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 10%);
   transition: var(--mine-transition);
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.article .container .card * {
+  pointer-events: none;
 }
 
 @media (max-width: 768px) {
