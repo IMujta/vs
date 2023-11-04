@@ -74,9 +74,7 @@ let counter = setInterval(() => {
 
 // --------------------------------------------
 let vs = document.querySelector(".landing .data .vs");
-let dataContaner = document.querySelector(".landing .data");
-let backGimage1 = document.querySelectorAll(".background-images img")[0];
-let backGimage2 = document.querySelectorAll(".background-images img")[1];
+let imgContaner = document.querySelector(".background-images");
 let boxs = document.querySelectorAll(".landing .data .box");
 let audio1 = document.querySelector("audio.rami");
 let audio2 = document.querySelector("audio.rayan");
@@ -85,48 +83,80 @@ let storDiv = document.querySelector(".white-cover");
 let iframies = document.querySelectorAll(".ifram-container");
 let ramiImg = document.querySelector(".rami-box img");
 let rayanImg = document.querySelector(".rayan-box img");
-let navBar = document.querySelector("nav.container");
-let clicked = false;
+let navBar = document.querySelector(".nav-bar");
+let m7Img = document.querySelector(".nav-bar .m7-img");
+let muteBtn = document.querySelector(".nav-bar .mute i");
+let areMuted = false;
 
 vs.onclick = function () {
-  if (clicked) {
-    location.reload();
-  } else {
-    audio1.play();
-    audio1.volume = 0.2;
-    audio2.play();
-    audio2.volume = 0.2;
-    theam.play();
-    theam.volume = 0.01;
-    // -------------------------
-    navBar.innerHTML = "<img src='images/m7.gif'>"
-    navBar.classList.add("vs")
-    storDiv.style.display = "none";
-    clicked = true;
-    // -------------------------
-    backGimage1.style.left = "0px";
-    backGimage2.style.right = "0px";
-    backGimage1.style.hieght = "100%";
-    backGimage2.style.hieght = "100%";
-    // -------------------------
-    iframies.forEach((frami) => {
-      frami.style.opacity = "1";
-      frami.classList.add("active")
-    })
-    // -------------------------
-    ramiImg.src = "images/ramiP.JPG";
-    ramiImg.classList.add("active")
+  audio1.play();
+  audio1.volume = 0.2;
+  audio2.play();
+  audio2.volume = 0.2;
+  theam.play();
+  theam.volume = 0.02;
+  // -------------------------
+  navBar.classList.add("vs");
+  storDiv.classList.add("vs");
+  // -------------------------
+  imgContaner.classList.add("vs");
+  // -------------------------
+  iframies.forEach((frami) => {
+    frami.classList.add("active")
+  })
+  // -------------------------
+  ramiImg.src = "images/ramiP.JPG";
+  ramiImg.classList.add("active")
 
-    rayanImg.src = "images/rayanP.JPG";
-    rayanImg.classList.add("active")
-    // -------------------------
-    boxs.forEach((box) => {
-      box.style.width = "100%";
-    })
-    // -------------------------
-    timerContaner.classList.add("active");
-    vs.classList.add("active");
-  }
+  rayanImg.src = "images/rayanP.JPG";
+  rayanImg.classList.add("active");
+  // -------------------------
+  boxs.forEach((box) => {
+    box.classList.add("active");
+  })
+  // -------------------------
+  timerContaner.classList.add("active");
+  vs.classList.add("active");
 }
+
+m7Img.onclick = function () {
+  theam.pause();
+  theam.currentTime = 0;
+  // -------------------------
+  navBar.classList.remove("vs");
+  storDiv.classList.remove("vs");
+  // -------------------------
+  imgContaner.classList.remove("vs");
+  // -------------------------
+  iframies.forEach((frami) => {
+    frami.classList.remove("active")
+  })
+  // -------------------------
+  ramiImg.src = "images/rami.JPG";
+  ramiImg.classList.remove("active")
+
+  rayanImg.src = "images/rayan.JPG";
+  rayanImg.classList.remove("active");
+  // -------------------------
+  boxs.forEach((box) => {
+    box.classList.remove("active");
+  })
+  // -------------------------
+  timerContaner.classList.remove("active");
+  vs.classList.remove("active");
+};
+
+muteBtn.onclick = function () {
+  if (areMuted) {
+    theam.volume = 0.02;
+    this.className = "fa-solid fa-volume-high";
+    areMuted = false;
+  } else {
+    theam.volume = 0;
+    this.className = "fa-solid fa-volume-xmark";
+    areMuted = true;
+  }
+
+};
 
 // -----------------------------
